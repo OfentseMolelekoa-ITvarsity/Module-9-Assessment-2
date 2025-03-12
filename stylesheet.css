@@ -1,0 +1,88 @@
+/* ================General Reset================ */
+* {
+    margin: 2px;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ================General Reset================ */
+
+/* ================Universal Styles================ */
+* {
+    color: white !important; 
+    font-weight: 700 !important;
+}
+/* ================Universal Styles ================ */
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ddfeff9e;
+    margin-top: 20px;
+    color: #333;
+    background-image: url(img/Blue_Marble_rotating.gif);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center center; 
+    background-attachment: fixed; 
+}
+
+#local {
+    background-color: #009393aa;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: left;
+}
+
+table th,
+table td {
+    padding: 10px;
+    border: 3px solid red;
+}
+
+table th {
+    display: none; 
+}
+
+table tr {
+    transition: transform 0.3s ease; 
+}
+
+.col1 img {
+    width: 30px;
+    height: auto;
+}
+
+.col2 {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+table tr:hover {
+    background-color: #009393aa;
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 768px) {
+    table, table th, table td {
+        display: block;
+    }
+
+    table th {
+        text-align: center;
+    }
+
+    table td {
+        text-align: left;
+        padding-left: 30%;
+    }
+}
